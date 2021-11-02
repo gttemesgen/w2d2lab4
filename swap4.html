@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>My Pictures</p>
+        <div>
+            <img src="/ImagesFlow/img011.jpg" id="fig1" width="200" height="150"
+                alt="">
+            <img src="/ImagesFlow/img007.jpg" id="fig2" width="200" height="150"
+                alt=""><br>
+            <button id="button1" onclick="f1()" type="button">swap</button>
+        </div>
+        <script>
+            
+    function f1(){
+        let fig1 = document.getElementById("fig1");
+            let fig2= document.getElementById("fig2");
+    let temp = fig1.src;
+    fig1.src= fig2.src;
+    fig2.src =temp;
+    
+
+
+
+}
+// let button1 = document.getElementById("button1")
+// button1.swap = f1;
+
+
+
+
+// <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+// <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+// <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+</script>
+    </body>
+</html>
